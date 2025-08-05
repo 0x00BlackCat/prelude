@@ -4,7 +4,9 @@
 (column-number-mode 1)
 (show-paren-mode 1)
 
-(setq prelude-theme 'gruber-darker)
+(setq prelude-theme 'ujelly)
+(set-frame-parameter nil 'alpha-background 95) ; For current frame
+(add-to-list 'default-frame-alist '(alpha-background . 95)) ; For all new frames henceforth
 
 (global-set-key (kbd "C-,") 'duplicate-line)
 (global-set-key (kbd "C-c C-n") 'next-buffer)
